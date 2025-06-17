@@ -365,3 +365,54 @@ footer {
     border-radius: 0 8px 8px 0;
   }
 }
+
+.venn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.venn-svg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
+
+.venn-circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 8;
+  opacity: 0;
+  transform: scale(0.8);
+  transform-origin: center;
+  animation: venn-pop 0.7s forwards;
+}
+
+.venn-circle.top { animation-delay: 0.1s; }
+.venn-circle.left { animation-delay: 0.3s; }
+.venn-circle.right { animation-delay: 0.5s; }
+
+@keyframes venn-pop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.venn-label {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 0.95rem;
+  fill: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 6px #222, 0 0 1px #222;
+  opacity: 0;
+  animation: venn-label-fade 0.5s 0.8s forwards;
+}
+
+@keyframes venn-label-fade {
+  to {
+    opacity: 1;
+  }
+}
