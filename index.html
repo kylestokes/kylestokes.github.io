@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kyle Stokes | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700|Merriweather:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +12,10 @@
     <div class="container">
       <img src="profile.jpg" alt="Kyle Stokes" class="profile-pic">
       <h1>Kyle Stokes</h1>
-      <p class="subtitle">Software Engineer • Educator • Creator</p>
+      <p class="subtitle">Software Engineer • Educator • Doctoral Student</p>
       <nav>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -25,132 +26,196 @@
 
   <main>
     <section id="about" class="container">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Kyle Stokes, a passionate software engineer and educator based in Cleveland, OH. I thrive at the intersection of humanity and technology, with a focus on mobile development, teaching, and building solutions that make a real impact.
-      </p>
-      <ul class="about-list">
-        <li><strong>Location:</strong> Cleveland, OH</li>
-        <li><strong>Email:</strong> <a href="mailto:kdstokes@pm.me">kdstokes@pm.me</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kyle-stokes/" target="_blank">kyle-stokes</a></li>
-        <li><strong>Download CV:</strong> <a href="KyleStokesCV.pdf" download>Click to Download (PDF)</a></li>
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p class="about-intro">
+          Hi, I'm <strong>Kyle Stokes</strong>, a software engineer, educator, and current doctoral student at <strong>Purdue University</strong>. My work bridges industry and academia, with an emphasis on mobile development, artificial intelligence, and computer science education. I am passionate about the intersection of technology and humanity.
+        </p>
+        <ul class="about-list">
+          <li>
+            <span class="about-label">Location:</span> Cleveland, OH
+          </li>
+          <li>
+            <span class="about-label">Email:</span>
+            <a href="mailto:kdstokes@pm.me">kdstokes@pm.me</a>
+          </li>
+          <li>
+            <span class="about-label">LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/kyle-stokes/" target="_blank">Kyle Stokes</a>
+          </li>
+          <li>
+            <span class="about-label">CV:</span>
+            <a href="KyleStokesCV.pdf" download>Click to Download (PDF)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>Purdue University</strong><br>
+          Doctor of Technology (DTech), Interdisciplinary<br>
+          <span class="edu-date">In Progress</span>
+        </li>
+        <li>
+          <strong>Harvard University, Extension School</strong><br>
+          Master of Liberal Arts (ALM), Software Engineering<br>
+          <span class="edu-date">2024</span>
+        </li>
+        <li>
+          <strong>University of Toledo</strong><br>
+          Bachelor of Science (BS), Computer Science and Engineering Technology<br>
+          <span class="edu-date">2017</span>
+        </li>
       </ul>
+    </section>
+
+    <section class="container">
+      <blockquote>
+        "Education is the most powerful weapon which you can use to change the world." <br>
+        <span>— Nelson Mandela</span>
+      </blockquote>
     </section>
 
     <section id="experience" class="container">
       <h2>Experience</h2>
-      <div class="job">
-        <h3>Oddball <span>Software Engineer</span></h3>
-        <p class="job-date">Oct 2024 – Present (Remote)</p>
-        <ul>
-          <li>Full-stack engineering focused on mobile development in Flutter</li>
-          <li>Agile collaboration with fully distributed team</li>
-          <li>Key contributor to BIZINT platform for military intelligence</li>
-          <li>Helped lower military costs, reduce environmental impact, and deter global conflicts</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>UCLA <span>Instructor</span></h3>
-        <p class="job-date">Sep 2024 – Present</p>
-        <ul>
-          <li>Teaching iOS App Development with Swift and HTML & CSS courses</li>
-          <li>Created a brand-new iOS app development course</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Harvard Extension School <span>Course Assistant</span></h3>
-        <p class="job-date">Aug 2024 – Dec 2024</p>
-        <ul>
-          <li>Assisted in Artificial Intelligence with Python course</li>
-          <li>Held bi-weekly office hours for student support</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>CoStar Group (Homes.com) <span>Senior iOS Engineer</span></h3>
-        <p class="job-date">Aug 2022 – Oct 2024</p>
-        <ul>
-          <li>Improved map data performance by 50%+</li>
-          <li>Overhauled Homes app with SwiftUI/Combine</li>
-          <li>Work featured in Super Bowl LVIII Ads</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Airspace <span>iOS Developer</span></h3>
-        <p class="job-date">Jun 2021 – Jun 2023</p>
-        <ul>
-          <li>Led iOS development for mission-critical driver app</li>
-          <li>Contributed to 500K+ shipments in 2021</li>
-          <li>Interviewed and reviewed candidates for mobile team</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Hanson Inc. <span>Mobile Software Engineer, iOS</span></h3>
-        <p class="job-date">Nov 2019 – May 2021</p>
-        <ul>
-          <li>Engineered camera-tracking app for first responders</li>
-          <li>Integrated digital editions in news app with 60K users</li>
-          <li>Refactored Objective-C codebase to Swift</li>
-        </ul>
+      <div class="experience-list">
+        <div class="job">
+          <h3>Oddball <span>Software Engineer</span></h3>
+          <p class="job-date">Oct 2024 – Present (Remote)</p>
+          <ul>
+            <li>Full-stack engineering with emphasis on mobile development in Flutter</li>
+            <li>Agile collaboration with fully distributed team</li>
+            <li>Key contributor to BIZINT platform for military intelligence</li>
+            <li>Help lower military costs, reduce environmental impact, and deter global conflicts</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>UCLA <span>Instructor</span></h3>
+          <p class="job-date">Sep 2024 – Present</p>
+          <ul>
+            <li>
+              <a href="https://www.uclaextension.edu/computer-science/software-development-programming/course/ios-app-development-swift-com-sci-x-4182" target="_blank" rel="noopener">
+                COM SCI X 418.2: iOS App Development with Swift
+              </a>
+            </li>
+            <li>
+              <a href="https://www.uclaextension.edu/computer-science/software-development-programming/course/html-and-css-com-sci-x-418102ab" target="_blank" rel="noopener">
+                COM SCI X 418.102AB: HTML &amp; CSS
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Harvard Extension School <span>Course Assistant</span></h3>
+          <p class="job-date">Aug 2024 – Dec 2024</p>
+          <ul>
+            <li>Held office hours bi-weekly for CSCI E-80: Artificial Intelligence with Python where
+              students brought questions on lectures, course material, or homework
+              assignments</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>CoStar Group (Homes.com) <span>Senior iOS Engineer</span></h3>
+          <p class="job-date">Aug 2022 – Oct 2024</p>
+          <ul>
+            <li>Implemented concurrent handling of map data to increase performance by over 50%</li>
+            <li>Leveraged SwiftUI/Combine to overhaul Homes app, enabling millions of users</li>
+            <li>Spearheaded development on allowing agents to edit listings away from MLS</li>
+            <li>Drove folder experience for saving and sharing favorite photos, homes, schools, etc.</li>
+            <li>Work featured in several Super Bowl LVIII Ads</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Airspace <span>iOS Developer</span></h3>
+          <p class="job-date">Jun 2021 – Jun 2023</p>
+          <ul>
+            <li>Led iOS development on driver app for mission-critical shipments</li>
+            <li>Contributed to massive company growth, including 500K+ pieces shipped in 2021</li>
+            <li>Interviewed and reviewed candidates for mobile team</li>
+            <li>Recognized in CNBC Disruptor 50 and Fast Company’s “Next Big Things in Tech”</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Hanson Inc. <span>Mobile Software Engineer, iOS</span></h3>
+          <p class="job-date">Nov 2019 – May 2021</p>
+          <ul>
+            <li>Engineered camera-tracking app for first responders</li>
+            <li>Integrated digital editions in news app with 60K users</li>
+            <li>Refactored Objective-C codebase to Swift</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Groovy</strong> – Designed and developed a finance app for iOS (<a href="https://apps.apple.com" target="_blank">App Store</a>)
-        </li>
-        <li>
-          <strong>Music Service Capstone</strong> – Led Harvard capstone team building an artist-driven music platform for fair compensation and listener rewards
-        </li>
-      </ul>
-    </section>
-
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <div>
-          <h4>Languages</h4>
-          <ul>
-            <li>Swift</li>
-            <li>Python</li>
-            <li>Dart</li>
-            <li>Java</li>
-            <li>JavaScript/TypeScript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Frameworks & Tools</h4>
-          <ul>
-            <li>SwiftUI / UIKit</li>
-            <li>Flutter</li>
-            <li>Combine</li>
-            <li>Django</li>
-            <li>Git / GitHub</li>
-            <li>Xcode</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Other</h4>
-          <ul>
-            <li>Agile</li>
-            <li>MVC / MVVM / VIPER</li>
-            <li>Effective communicator & teacher</li>
-            <li>Creative & artistic</li>
-            <li>Learning French</li>
-          </ul>
-        </div>
+      <div class="section-card projects-card">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+          <li>
+            <strong>Groovy</strong> – Designed and developed a finance app for iOS
+            (<a href="https://apps.apple.com/in/app/groovy-money-mindfulness/id1420226962" target="_blank">App Store</a>)
+          </li>
+          <li>
+            <strong>Music Service Capstone</strong> – Led Harvard capstone team building an artist-driven music platform for fair compensation and listener rewards
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>
-        Interested in working together or want to connect? <br>
-        <a href="mailto:kdstokes@pm.me" class="contact-btn">Email Me</a>
-      </p>
+    <section id="skills" class="container">
+      <div class="section-card skills-card">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div>
+            <h4>Languages</h4>
+            <ul>
+              <li>Swift</li>
+              <li>Python</li>
+              <li>Dart</li>
+              <li>Java</li>
+              <li>JavaScript/TypeScript</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Frameworks &amp; Tools</h4>
+            <ul>
+              <li>SwiftUI / UIKit</li>
+              <li>Flutter</li>
+              <li>Combine</li>
+              <li>Django</li>
+              <li>Git / GitHub</li>
+              <li>Xcode</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other</h4>
+            <ul>
+              <li>Agile</li>
+              <li>MVC / MVVM / VIPER</li>
+              <li>Effective communicator &amp; teacher</li>
+              <li>Creative &amp; artistic</li>
+              <li>Learning French</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
+    
+
+    <section id="contact" class="container">
+      <div class="section-card contact-card">
+        <h2>Contact</h2>
+        <p>
+          Interested in working together or want to connect?
+        </p>
+        <a href="mailto:kdstokes@pm.me" class="contact-btn">Email Me</a>
+      </div>
+    </section>
+    
   </main>
 
   <footer>
